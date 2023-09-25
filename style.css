@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box !important;
+}
+
+body {
+	overflow-x: hidden !important;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Material Icons Style */
+.material-icons.md-18 {
+	font-size: 18px;
+}
+.material-icons.md-24 {
+	font-size: 24px;
+}
+.material-icons.md-36 {
+	font-size: 36px;
+}
+.material-icons.md-48 {
+	font-size: 48px;
+}
+
+.material-icons.md-210 {
+	font-size: 182px;
+}
+
+.material-icons.md-light {
+	color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-dark {
+	color: rgb(54, 54, 54);
+}
+
+/*Navbar Style*/
+.navbar {
+	margin: 0 auto;
+	background-color: #37373c; /*#eeeef5*/
+	box-shadow: 0 0 15px #d1d1d1;
+}
+
+.nav-link,
+.navbar-brand {
+	color: #eeeef5 !important;
+	cursor: pointer;
+}
+
+.navbar-brand {
+	font-family: Work Sans;
+	font-size: 20px;
+	font-weight: 600;
+	margin-left: 8px;
+	float: left;
+	display: flex;
+}
+
+.navbar-brand .brand-name {
+	margin-top: 2px;
+}
+
+.navbar-nav {
+	margin: 0 auto;
+}
+
+.nav-link {
+	font-family: Work Sans;
+	font-size: 16px;
+	padding: 10px 3px 10px 3px;
+	margin-right: 15px;
+}
+
+.nav-link:hover {
+	background-color: #eeeef5;
+	color: #37373c !important;
+}
+
+#home,
+#contact,
+#banner {
+	background-color: #eeeef5;
+}
+
+/* Header */
+.header,
+.banner {
+	margin: 50px 0 0 0;
+	padding: 0 0 20px 0;
+}
+
+.headImg Img,
+.projImg Img {
+	height: auto;
+	width: 100%;
+	max-width: 450px;
+}
+
+/* Banner Header */
+.bannerImg {
+	height: auto;
+	width: 50%;
+	opacity: 15%;
+	margin: 0 auto;
+}
+
+/* Projects Section */
+.projects {
+	padding: 0 0 40px 0;
+	background-image: url(/img/codeop.png);
+	background-repeat: no-repeat;
+	background-size: 300px;
+	background-position: 50% 50%;
+}
+.projectsPg {
+	padding: 0 0 40px 0;
+}
+
+.proj {
+	background-color: #eeeef5;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 15px;
+	box-shadow: 5px 5px 5px #d1d1d1;
+}
+
+.projText,
+.wText {
+	color: #555555;
+	font-size: large;
+	font-weight: 500;
+	margin: 10px 10px 0 5px;
+}
+
+.proj a, 
+.see-more,
+.whatsApp a {
+	color: #fafafa;
+	font-family: Work Sans;
+	padding: 5px 12px 5px 12px;
+}
+
+.projectCard {
+	width: 30%;
+	margin: 0 34px 0 0;
+}
+
+.projectCardImg {
+	width: 80%;
+}
+
+.see-more {
+	font-size: 14px;
+}
+
+/* Contact Style */
+.contact {
+	padding: 50px 0 50px 0;
+}
+
+.whatsApp {
+	border-radius: 5px;
+	background-color: #f4f4f4;
+	padding: 10px;
+	box-shadow: 5px 5px 5px #d1d1d1;
+}
+
+/* Footer Style */
+#footer {
+	background-color: #343434;
+	color: #fafafa;
+}
+
+.in-footer {
+	padding: 30px 34px 18px 34px;
+}
+
+.pfText a {
+	font-size: large;
+}
+
+/* Style - navbarToggler Appearance */
+@media screen and (max-width: 991px) {
+	.navbar-nav {
+		margin-top: 10px;
+	}
+
+	.nav-link {
+		padding-left: 10px;
+	}
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 576px) {
+	.header {
+		height: 65vh;
+	}
+
+	.headImg Img {
+		margin-top: 45px;
+	}
+
+	.headText {
+		margin: 30px 0 0 0;
+	}
+
+	.banner {
+		height: 42vh;
+	}
+
+	.bannerImg {
+		padding-top: 50px;
+	}
+
+	.projectCard {
+		display: block;
+		width: 84%;
+		margin: 0 0 34px 0;
+	}
+
+	.proj {
+		width: 80%;
+	}
+
+	.whatsApp {
+		width: 60%;
+	}
+}
+
+/* Tablets */
+@media screen and (min-width: 577px) and (max-width: 767px) {
+	.header {
+		height: 68vh;
+	}
+
+	.headImg Img {
+		margin-top: 50px;
+	}
+
+	.headText {
+		margin: 30px 0 0 0;
+	}
+
+	.banner {
+		height: 45vh;
+	}
+
+	.bannerImg {
+		padding-top: 60px;
+	}
+
+	.proj {
+		width: 65%;
+	}
+
+	.whatsApp {
+		width: 45%;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.header {
+		height: 63vh;
+	}
+
+	.headImg Img {
+		margin-top: 50px;
+	}
+
+	.headText {
+		margin: 30px 0 0 0;
+	}
+
+	.banner {
+		height: 45vh;
+	}
+
+	.bannerImg {
+		padding-top: 60px;
+	}
+
+	.proj {
+		width: 53%;
+	}
+
+	.whatsApp {
+		width: 40%;
+	}
+}
+
+/* Laptops, Desktops */
+@media screen and (min-width: 992px) {
+	.header {
+		height: 60vh;
+	}
+
+	.headImg Img {
+		margin: 85px 0 0 10px;
+	}
+
+	.headText {
+		margin: 120px 0 0 0px;
+	}
+
+	.flink {
+		margin: 0 0 0 -135px;
+	}
+
+	.banner {
+		height: 55vh;
+	}
+
+	.bannerImg {
+		padding-top: 40px;
+	}
+
+	.bannerHead {
+		margin: -135px 0 0 0;
+	}
+
+	.bannerText {
+		margin: -80px 0 0 0;
+	}
+
+	.projects {
+		height: 91vh;
+	}
+
+	.projImg {
+		margin: -70px 0 0 0;
+		overflow: hidden;
+		opacity: 5%;
+		padding-bottom: 10px;
+	}
+
+	.projectCard {
+		width: 30%;
+		margin: 0 34px 0 0;
+	}
+
+	.proj {
+		width: 40%;
+	}
+
+	.whatsApp {
+		width: 35%;
+	}
+}
