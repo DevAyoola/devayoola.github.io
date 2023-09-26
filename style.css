@@ -236,6 +236,10 @@ a {
 		width: 100%;
 	}
 
+	.projText {
+		font-size: 15px;
+	}
+
 	.whatsApp {
 		width: 80%;
 	}
