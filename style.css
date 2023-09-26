@@ -124,10 +124,13 @@ a {
 }
 
 .proj {
+	margin-bottom: 33px;
+}
+
+.projText {
 	background-color: #eeeef5;
 	border-radius: 5px;
-	padding: 10px;
-	margin-bottom: 15px;
+	padding: 12px;
 	box-shadow: 5px 5px 5px #d1d1d1;
 }
 
@@ -139,7 +142,7 @@ a {
 	margin: 10px 10px 0 5px;
 }
 
-.proj a, 
+.proj a,
 .see-more,
 .whatsApp a {
 	color: #fafafa;
@@ -166,9 +169,13 @@ a {
 }
 
 .whatsApp {
-	border-radius: 5px;
+	padding: 2px;
+}
+
+.wText {
 	background-color: #f4f4f4;
-	padding: 10px;
+	border-radius: 5px;
+	padding: 12px;
 	box-shadow: 5px 5px 5px #d1d1d1;
 }
 
@@ -226,7 +233,7 @@ a {
 	}
 
 	.proj {
-		width: 80%;
+		width: 100%;
 	}
 
 	.whatsApp {
@@ -330,7 +337,7 @@ a {
 	}
 
 	.projects {
-		height: 91vh;
+		height: 85vh;
 	}
 
 	.projImg {
