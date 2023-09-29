@@ -6,7 +6,7 @@ This is a GitHub page site to showcase my projects.
 
 **Libraries** - Bootstrap, Google Fonts
 
-## Completed
+## Projects
 
 - Web Text Editor
 - EA Adeboye Tribute Page
@@ -15,9 +15,8 @@ This is a GitHub page site to showcase my projects.
 - URL Search Bar
 - HTML Code Editor
 - Hospital Landing Page
-
-## On the Way
-
 - Guess the Number
 - Roll Dice Game
+- Countdown Timer
+- Calculator
 - Bankist Application

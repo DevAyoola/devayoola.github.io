@@ -193,6 +193,20 @@ a {
 	font-size: large;
 }
 
+.github {
+	margin: 0;
+}
+
+.github img,
+.github p {
+	float: left;
+}
+
+.github img {
+	height: 23px;
+	margin: 5px 10px 0 0;
+}
+
 /* Style - navbarToggler Appearance */
 @media screen and (max-width: 991px) {
 	.navbar-nav {
