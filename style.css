@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 *,
 *::before,
@@ -16,29 +15,25 @@ a {
 }
 
 /* Material Icons Style */
-.material-icons.md-18 {
-	font-size: 18px;
-}
-.material-icons.md-24 {
+.mi-24 {
 	font-size: 24px;
 }
-.material-icons.md-36 {
+
+.mi-36 {
 	font-size: 36px;
 }
-.material-icons.md-48 {
-	font-size: 48px;
-}
 
-.material-icons.md-210 {
+.mi-198 {
 	font-size: 182px;
 }
 
-.material-icons.md-light {
-	color: rgba(255, 255, 255, 1);
+.mi-light,
+.iw {
+	color: #eeeef5;
 }
 
-.material-icons.md-dark {
-	color: rgb(54, 54, 54);
+.mi-dark {
+	color: #404040;
 }
 
 /*Navbar Style*/
@@ -83,6 +78,81 @@ a {
 	color: #37373c !important;
 }
 
+.face-icon {
+	cursor: pointer;
+	border: 0;
+	background-color: transparent;
+}
+
+/* Profile Card */
+.profile-card {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	background-color: whitesmoke;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	align-items: center;
+	max-width: 400px;
+	width: 90%;
+	border-radius: 25px;
+	padding: 0 30px 30px 30px;
+	border: 1px solid #ffffff40;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+	z-index: 10;
+	/*margin-top: 75px;*/
+}
+
+.close-profile {
+	font-size: 2.5rem;
+	color: #7c7c7c;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+.image {
+	position: relative;
+	height: 100px;
+	width: 100px;
+}
+
+.image .profile-pic {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.data {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.data h4 {
+	font-weight: 600;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(5px);
+	z-index: 5;
+}
+
 #home,
 #contact,
 #banner {
@@ -112,42 +182,8 @@ a {
 }
 
 /* Projects Section */
-.projects {
-	padding: 0 0 40px 0;
-	background-image: url(/img/codeop.png);
-	background-repeat: no-repeat;
-	background-size: 300px;
-	background-position: 50% 50%;
-}
 .projectsPg {
-	padding: 0 0 40px 0;
-}
-
-.proj {
-	margin-bottom: 33px;
-}
-
-.projText {
-	background-color: #eeeef5;
-	border-radius: 5px;
-	padding: 12px;
-	box-shadow: 5px 5px 5px #d1d1d1;
-}
-
-.projText,
-.wText {
-	color: #555555;
-	font-size: large;
-	font-weight: 500;
-	margin: 10px 10px 0 5px;
-}
-
-.proj a,
-.see-more,
-.whatsApp a {
-	color: #fafafa;
-	font-family: Work Sans;
-	padding: 5px 12px 5px 12px;
+	padding: 0 0 45px 0;
 }
 
 .projectCard {
@@ -160,7 +196,7 @@ a {
 }
 
 .see-more {
-	font-size: 14px;
+	color: #fafafa;
 }
 
 /* Contact Style */
@@ -170,6 +206,12 @@ a {
 
 .whatsApp {
 	padding: 2px;
+}
+
+.whatsApp a {
+	color: #fafafa;
+	font-family: Work Sans;
+	padding: 5px 12px 5px 12px;
 }
 
 .wText {
@@ -182,29 +224,24 @@ a {
 /* Footer Style */
 #footer {
 	background-color: #343434;
-	color: #fafafa;
+	color: #eeeef5;
 }
 
 .in-footer {
-	padding: 30px 34px 18px 34px;
+	padding: 35px 34px 18px 34px;
 }
 
-.pfText a {
-	font-size: large;
+.footer-a {
+	color: #eeeef5;
+	font-size: 17px;
 }
 
-.github {
-	margin: 0;
+.footer-a:hover {
+	color: #c4c4d7;
 }
 
-.github img,
-.github p {
-	float: left;
-}
-
-.github img {
-	height: 23px;
-	margin: 5px 10px 0 0;
+.hidden {
+	display: none;
 }
 
 /* Style - navbarToggler Appearance */
@@ -221,7 +258,7 @@ a {
 /* Mobile Phones */
 @media screen and (max-width: 576px) {
 	.header {
-		height: 65vh;
+		height: 68vh;
 	}
 
 	.headImg Img {
@@ -246,15 +283,6 @@ a {
 		margin: 0 0 34px 0;
 	}
 
-	.proj {
-		width: 100%;
-	}
-
-	.projText {
-		font-size: 15px;
-		font-weight: normal;
-	}
-
 	.whatsApp {
 		width: 80%;
 	}
@@ -262,6 +290,38 @@ a {
 
 /* Tablets */
 @media screen and (min-width: 577px) and (max-width: 767px) {
+	.header {
+		height: 72vh;
+	}
+
+	.headImg Img {
+		margin-top: 50px;
+	}
+
+	.headText {
+		margin: 30px 0 0 0;
+	}
+
+	.banner {
+		height: 45vh;
+	}
+
+	.bannerImg {
+		padding-top: 60px;
+	}
+
+	.projectCard {
+		display: block;
+		width: 75%;
+		margin: 0 0 34px 0;
+	}
+
+	.whatsApp {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
 	.header {
 		height: 68vh;
 	}
@@ -282,38 +342,12 @@ a {
 		padding-top: 60px;
 	}
 
-	.proj {
-		width: 65%;
+	.bannerHead {
+		margin: -135px 0 0 0;
 	}
 
-	.whatsApp {
-		width: 80%;
-	}
-}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-	.header {
-		height: 63vh;
-	}
-
-	.headImg Img {
-		margin-top: 50px;
-	}
-
-	.headText {
-		margin: 30px 0 0 0;
-	}
-
-	.banner {
-		height: 45vh;
-	}
-
-	.bannerImg {
-		padding-top: 60px;
-	}
-
-	.proj {
-		width: 53%;
+	.bannerText {
+		margin: -65px 0 0 0;
 	}
 
 	.whatsApp {
@@ -352,11 +386,7 @@ a {
 	}
 
 	.bannerText {
-		margin: -80px 0 0 0;
-	}
-
-	.projects {
-		height: 90vh;
+		margin: -65px 0 0 0;
 	}
 
 	.projImg {

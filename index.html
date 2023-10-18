@@ -7,6 +7,7 @@
 			content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1"
 		/>
 		<title>DevAyoola</title>
+		<link rel="stylesheet" href="./bootstrap-icons/bootstrap-icons.css" />
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -17,14 +18,15 @@
 			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<!--link rel="stylesheet" href="file:///Users/AYOOLA/WebDev/WD_Libs/bootstrap-5.2.3/css/bootstrap.min.css" type="text/css"/-->
+		<link rel="stylesheet" href="./style.css" type="text/css" />
 	</head>
 	<body>
 		<!--NAVIGATION BAR-->
 		<nav class="navbar navbar-expand-lg fixed-top pt-2 pb-2">
 			<div class="container-fluid pt-2 pb-2">
 				<a class="navbar-brand" href="https://devayoola.github.io">
-					<span class="material-icons md-36 md-light">code</span>
+					<span class="material-icons mi-36 mi-light">code</span>
 					<span class="brand-name">DevAyoola</span>
 				</a>
 				<button
@@ -36,7 +38,7 @@
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<span class="material-icons md-24 md-light">menu</span>
+					<span class="material-icons mi-24 mi-light">menu</span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav">
@@ -44,7 +46,7 @@
 							<a class="nav-link" href="./index.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="./projects.html"> My Projects</a>
+							<a class="nav-link" href="./projects.html">Projects</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="./index.html#contact">Contact</a>
@@ -54,6 +56,28 @@
 			</div>
 		</nav>
 		<br />
+		<!--PROFILE-->
+		<div class="profile-card hidden">
+			<button class="close-profile">&times;</button>
+			<div class="image">
+				<img src="./img/profile.jpg" alt="" class="profile-pic" />
+			</div>
+			<div class="data">
+				<h4>Sowunmi Ayoola</h4>
+				<p>A Frontend Developer and Designer</p>
+			</div>
+			<div class="row">
+				<span
+					><a href="https://github.com/devayoola">
+						<i class="bi bi-github fs-3 text-success"></i> </a
+					>&nbsp;
+					<a href="https://wa.me/2348084634310">
+						<i class="bi bi-whatsapp fs-3 text-success"></i> </a
+				></span>
+			</div>
+		</div>
+		<div class="overlay hidden"></div>
+
 		<!--HEADER-->
 		<header class="header pb-3" id="home">
 			<div class="container">
@@ -75,119 +99,150 @@
 			</div>
 			<br />
 		</header>
+
 		<!--PROJECTS SECTION-->
-		<section id="projects" class="projects pt-5">
-			<div class="container">
-				<div class="row m-auto">
-					<div class="mb-3">
-						<h1>
-							<b>Latest Projects</b>
-						</h1>
+		<section id="projects" class="projects pt-5 mb-5">
+			<div class="container overflow-hidden">
+				<div class="row mb-4">
+					<h2>
+						<b>Latest Projects</b>
+					</h2>
+				</div>
+				<div class="row">
+					<div class="card projectCard mx-auto">
+						<span class="material-icons mi-198">code</span>
+						<div class="card-body">
+							<h5 class="card-title">Countdown Timer</h5>
+							<br />
+							<a href="./countdown-timer" class="btn btn-primary">View</a>
+						</div>
 					</div>
-					<div class="projectsList">
-						<div class="proj">
-							<span class="projText">Roll Dice Game</span
-							><a
-								role="button"
-								href="https://devayoola.github.io/roll-dice-game/"
-								class="btn btn-info"
-								>View</a
-							>
+					<div class="card projectCard mx-auto">
+						<span class="material-icons mi-198">code</span>
+						<div class="card-body">
+							<h5 class="card-title">Hospital Landing Page</h5>
+							<br />
+							<a href="./hospital-landing-page" class="btn btn-primary">View</a>
 						</div>
-						<div class="proj">
-							<span class="projText">Countdown Timer</span
-							><a
-								role="button"
-								href="https://devayoola.github.io/countdown-timer"
-								class="btn btn-info"
-								>View</a
-							>
+					</div>
+					<div class="card projectCard mx-auto">
+						<span class="material-icons mi-198">code</span>
+						<div class="card-body">
+							<h5 class="card-title">Roll Dice Game</h5>
+							<br />
+							<a href="./roll-dice-game" class="btn btn-primary">View</a>
 						</div>
-						<div class="proj">
-							<span class="projText">Hospital Landing Page</span
-							><a
-								role="button"
-								href="https://devayoola.github.io/hospital-landing-page"
-								class="btn btn-info"
-								>View</a
-							>
-						</div>
-						<div class="proj">
-							<span class="projText">EA Adeboye Tribute Page</span
-							><a
-								role="button"
-								href="https://devayoola.w3spaces.com/ea-adeboye-tribute-page.html"
-								class="btn btn-info"
-								>View</a
-							>
-						</div>
-						<div class="proj">
-							<span class="projText">HTML Code Editor</span
-							><a
-								role="button"
-								href="https://devayoola.w3spaces.com/html-code-editor.html"
-								class="btn btn-info"
-								>View</a
-							>
-						</div>
-						<div>
+					</div>
+				</div>
+				<div class="row mt-5">
+					<div class="card projectCard mx-auto">
+						<span class="material-icons mi-198">code</span>
+						<div class="card-body">
+							<h5 class="card-title">Dave Designs Portfolio</h5>
+							<br />
 							<a
-								role="button"
-								href="https://devayoola.github.io/projects.html"
-								class="btn btn-info btn-lg fs-5 see-more"
-								>See More</a
+								href="https://devayoola.w3spaces.com/dave-designs-portfolio.html"
+								class="btn btn-primary"
+								>View</a
+							>
+						</div>
+					</div>
+					<div class="card projectCard mx-auto">
+						<span class="material-icons mi-198">code</span>
+						<div class="card-body">
+							<h5 class="card-title">EA Adeboye Tribute Page</h5>
+							<br />
+							<a
+								href="https://devayoola.w3spaces.com/ea-adeboye-tribute-page.html"
+								class="btn btn-primary"
+								>View</a
+							>
+						</div>
+					</div>
+					<div class="card projectCard mx-auto">
+						<span class="material-icons mi-198">code</span>
+						<div class="card-body">
+							<h5 class="card-title">HTML Code Editor</h5>
+							<br />
+							<a
+								href="https://devayoola.w3spaces.com/html-code-editor.html"
+								class="btn btn-primary"
+								>View</a
 							>
 						</div>
 					</div>
 				</div>
+				<div class="row mt-4">
+					<div class="d-flex justify-content-center">
+						<a
+							role="button"
+							href="https://devayoola.github.io/projects.html"
+							class="btn btn-info fs-5 see-more w-50 p-1"
+							>See More</a
+						>
+					</div>
+				</div>
 			</div>
 		</section>
+
 		<!--CONTACT-->
 		<section id="contact" class="contact">
 			<div class="container">
 				<div class="row m-auto">
 					<div class="mb-3">
-						<h1><b>Contact</b></h1>
+						<h2><b>Contact</b></h2>
 					</div>
 					<div class="whatsApp">
-						<span class="wText"><code>Via WhatsApp</code></span>
-						<a role="button" href="wa.me/08084634310" class="btn btn-info"
+						<span class="wText"><code>Via WhatsApp</code></span
+						>&nbsp;&nbsp;&nbsp;
+						<a
+							role="button"
+							href="https://wa.me/08084634310"
+							class="btn btn-info"
 							>DM</a
 						>
 					</div>
 				</div>
 			</div>
 		</section>
+
 		<!--FOOTER-->
 		<footer id="footer">
-			<div class="row in-footer">
-				<div class="col-lg-6">
-					<h3>
-						<b>DevAyoola</b>
-					</h3>
-					<p>
-						Hello! Am Ayoola. Am a frontend web developer and an aspiring
-						software engineer passionate about designing and developing to make
-						the world a better place.
-					</p>
-				</div>
-				<div class="col-lg-6 pt-3">
-					<p class="pfText pb-1">
-						<a href="./projects.html">My Projects</a>
-					</p>
-					<p class="pfText pb-1 github">
-						<img src="./img/github.svg" />
-						<p><a href="https://github.com/DevAyoola">Github Profile</a></p>
-					</p>
-					<p>© 2023</p>
+			<div class="container-fluid">
+				<div class="row in-footer">
+					<div class="col-lg-6 col-sm-12">
+						<h3>
+							<b>DevAyoola</b>
+						</h3>
+						<p>
+							Hello! Am Ayoola. Am a frontend web developer and an aspiring
+							software engineer passionate about designing and developing to
+							make the world a better place.
+						</p>
+					</div>
+					<div class="col-lg-6 col-sm-12 pt-3">
+						<p>
+							<a href="./projects.html" class="footer-a">My Projects</a>
+						</p>
+						<span
+							><a href="https://github.com/devayoola">
+								<i class="bi bi-github fs-3 text-primary"></i> </a
+							>&nbsp;
+							<a href="https://wa.me/2348084634310">
+								<i class="bi bi-whatsapp fs-3 text-success"></i> </a
+						></span>
+						<p class="pt-2">© 2023</p>
+					</div>
 				</div>
 			</div>
 		</footer>
 		<!--JS-->
+		<script src="./js/script.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
 			crossorigin="anonymous"
 		></script>
+		<!--script src="file:///Users/AYOOLA/WebDev/WD_Libs/bootstrap-5.2.3/js/bootstrap.min.js"></script-->
 	</body>
 </html>
