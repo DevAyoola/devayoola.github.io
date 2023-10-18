@@ -245,7 +245,7 @@ footer {
 /* Mobile Phones */
 @media screen and (max-width: 576px) {
 	.header {
-		height: 68vh;
+		height: 70vh;
 	}
 
 	.headImg Img {
@@ -257,7 +257,7 @@ footer {
 	}
 
 	.banner {
-		height: 42vh;
+		height: 45vh;
 	}
 
 	.bannerImg {
