@@ -36,10 +36,16 @@ a {
 	color: #404040;
 }
 
+#home,
+#contact,
+.banner {
+	background-color: #eeeef5;
+}
+
 /*Navbar Style*/
 .navbar {
 	margin: 0 auto;
-	background-color: #37373c; /*#eeeef5*/
+	background-color: #3e3e43;
 	box-shadow: 0 0 15px #d1d1d1;
 }
 
@@ -153,12 +159,6 @@ a {
 	z-index: 5;
 }
 
-#home,
-#contact,
-#banner {
-	background-color: #eeeef5;
-}
-
 /* Header */
 .header,
 .banner {
@@ -221,23 +221,10 @@ a {
 	box-shadow: 5px 5px 5px #d1d1d1;
 }
 
-/* Footer Style */
-#footer {
-	background-color: #343434;
+/* Footer */
+footer {
+	background-color: #2e2e31;
 	color: #eeeef5;
-}
-
-.in-footer {
-	padding: 35px 34px 18px 34px;
-}
-
-.footer-a {
-	color: #eeeef5;
-	font-size: 17px;
-}
-
-.footer-a:hover {
-	color: #c4c4d7;
 }
 
 .hidden {
