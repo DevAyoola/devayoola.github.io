@@ -37,8 +37,9 @@ a {
 }
 
 #home,
-#projects,
-.banner {
+.projectsPg,
+.banner,
+.contact {
 	background-color: #eeeef5;
 }
 
@@ -185,39 +186,40 @@ a {
 	padding: 0 0 45px 0;
 }
 
-.projectCard {
-	width: 30%;
+.projectCard,
+.projectCard--col {
 	margin: 0 34px 0 0;
+}
+
+.projectCard--col {
+	background-color: #f9f9fc;
 }
 
 .projectCardImg {
 	width: 80%;
 }
 
-.see-more {
+.see-more,
+.get-in-touch {
+	background-color: #5a5aff;
+	color: #fafafa;
+	border-radius: 35px;
+	font-family: Work Sans;
+}
+
+.see-more:hover,
+.get-in-touch:hover {
+	background-color: #4a4ad2;
 	color: #fafafa;
 }
 
 /* Contact Style */
 .contact {
-	padding: 50px 0 50px 0;
+	padding: 50px 0;
 }
 
 .whatsApp {
 	padding: 2px;
-}
-
-.whatsApp a {
-	color: #e0e0e0;
-	font-family: Work Sans;
-	padding: 5px 12px 5px 12px;
-}
-
-.wText {
-	background-color: #f4f4f4;
-	border-radius: 5px;
-	padding: 12px;
-	box-shadow: 5px 5px 5px #d1d1d1;
 }
 
 /* Footer */
@@ -229,6 +231,11 @@ footer {
 .def {
 	color: #eeeef5;
 	font-family: Work Sans;
+}
+
+.def a,
+.hov:hover {
+	color: #4c4cff;
 }
 
 .hidden {
@@ -268,7 +275,8 @@ footer {
 		padding-top: 50px;
 	}
 
-	.projectCard {
+	.projectCard,
+	.projectCard--col {
 		display: block;
 		width: 84%;
 		margin: 0 0 34px 0;
@@ -301,7 +309,8 @@ footer {
 		padding-top: 60px;
 	}
 
-	.projectCard {
+	.projectCard,
+	.projectCard--col {
 		display: block;
 		width: 75%;
 		margin: 0 0 34px 0;
@@ -387,7 +396,8 @@ footer {
 		padding-bottom: 10px;
 	}
 
-	.projectCard {
+	.projectCard,
+	.projectCard--col {
 		width: 30%;
 		margin: 0 34px 0 0;
 	}
