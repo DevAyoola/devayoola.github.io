@@ -36,9 +36,10 @@ a {
 	color: #404040;
 }
 
-#home,
+.projects,
 .projectsPg,
-.banner,
+.bannerProj,
+.web-components,
 .contact {
 	background-color: #eeeef5;
 }
@@ -52,6 +53,7 @@ a {
 
 .nav-link,
 .navbar-brand {
+	border-radius: 5px;
 	color: #eeeef5 !important;
 	cursor: pointer;
 }
@@ -80,7 +82,8 @@ a {
 	margin-right: 15px;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.active {
 	background-color: #eeeef5;
 	color: #37373c !important;
 }
@@ -106,7 +109,6 @@ a {
 	border-radius: 25px;
 	padding: 0 30px 30px 30px;
 	border: 1px solid #ffffff40;
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
 	z-index: 10;
 	/*margin-top: 75px;*/
 }
@@ -160,10 +162,15 @@ a {
 	z-index: 5;
 }
 
-/* Header */
-.header,
-.banner {
+/* Banner */
+.banner,
+.bannerProj {
 	margin: 50px 0 0 0;
+}
+
+.banner {
+	background-image: linear-gradient(to top left, #aaa8ba 0%, #c0ded6 100%);
+	font-family: Work Sans;
 }
 
 .headImg Img,
@@ -192,7 +199,7 @@ a {
 }
 
 .projectCard--col {
-	background-color: #f9f9fc;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .projectCardImg {
@@ -248,6 +255,10 @@ footer {
 		margin-top: 10px;
 	}
 
+	.nav-item {
+		margin-bottom: 5px;
+	}
+
 	.nav-link {
 		padding-left: 10px;
 	}
@@ -255,7 +266,7 @@ footer {
 
 /* Mobile Phones */
 @media screen and (max-width: 576px) {
-	.header {
+	.banner {
 		height: 70vh;
 	}
 
@@ -267,7 +278,7 @@ footer {
 		margin: 30px 0 0 0;
 	}
 
-	.banner {
+	.bannerProj {
 		height: 45vh;
 	}
 
@@ -289,7 +300,7 @@ footer {
 
 /* Tablets */
 @media screen and (min-width: 577px) and (max-width: 767px) {
-	.header {
+	.banner {
 		height: 72vh;
 	}
 
@@ -301,7 +312,7 @@ footer {
 		margin: 30px 0 0 0;
 	}
 
-	.banner {
+	.bannerProj {
 		height: 45vh;
 	}
 
@@ -322,7 +333,7 @@ footer {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-	.header {
+	.banner {
 		height: 68vh;
 	}
 
@@ -334,7 +345,7 @@ footer {
 		margin: 30px 0 0 0;
 	}
 
-	.banner {
+	.bannerProj {
 		height: 45vh;
 	}
 
@@ -350,6 +361,13 @@ footer {
 		margin: -65px 0 0 0;
 	}
 
+	.projectCard,
+	.projectCard--col {
+		display: block;
+		width: 75%;
+		margin: 0 0 34px 0;
+	}
+
 	.whatsApp {
 		width: 40%;
 	}
@@ -357,7 +375,7 @@ footer {
 
 /* Laptops, Desktops */
 @media screen and (min-width: 992px) {
-	.header {
+	.banner {
 		height: 60vh;
 	}
 
@@ -369,11 +387,7 @@ footer {
 		margin: 120px 0 0 0px;
 	}
 
-	.flink {
-		margin: 0 0 0 -135px;
-	}
-
-	.banner {
+	.bannerProj {
 		height: 55vh;
 	}
 

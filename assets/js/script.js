@@ -5,18 +5,29 @@ const navbarCollapse = document.querySelector(".navbar-collapse");
 const profileCard = document.querySelector(".profile-card");
 const overlay = document.querySelector(".overlay");
 const btnCloseProfile = document.querySelector(".close-profile");
+const pageTitle = document.querySelector(".page-title");
 
 if (navbarToggler.collapse === false) {
 	navbarCollapse.insertAdjacentHTML(
 		"afterend",
-		`<button class="face-icon show-profile"><img src="./img/face_FILL0_wght400_GRAD0_opsz24.svg" class="me-2" /></button>`
+		`<button class="face-icon show-profile"><img src="./assets/img/face_FILL0_wght400_GRAD0_opsz24.svg" class="me-2" /></button>`
 	);
 } else {
 	navbarCollapse.insertAdjacentHTML(
 		"beforeend",
-		`<button class="face-icon show-profile"><img src="./img/face_FILL0_wght400_GRAD0_opsz24.svg" class="me-2 pt-2" /></button>`
+		`<button class="face-icon show-profile"><img src="./assets/img/face_FILL0_wght400_GRAD0_opsz24.svg" class="me-2 pt-2" /></button>`
 	);
 }
+
+let navBtns = navbarCollapse.getElementsByClassName("nav-link");
+
+const selectActive = function () {
+	let title = pageTitle.textContent;
+	for (let i = 0; i < navBtns.length; i++) {
+		if (title == navBtns[i].textContent) navBtns[i].classList.add("active");
+	}
+};
+selectActive();
 
 const btnOpenProfile = document.querySelector(".show-profile");
 
@@ -38,11 +49,3 @@ btnOpenProfile.addEventListener("click", openProfile);
 btnCloseProfile.addEventListener("click", closeProfile);
 
 overlay.addEventListener("click", closeProfile);
-
-/*document.addEventListener("keydown", function (e) {
-	console.log(e);
-	if (e.key === "Enter" && !profileCard.classList.contains("hidden")) {
-		closeProfile();
-	}
-});
-*/
