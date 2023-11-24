@@ -2,7 +2,7 @@ const bodyDoc = document.querySelector("body");
 
 let docTitle = document.title;
 const str = docTitle.toLowerCase().split(" ").join("-");
-const url = `https://devayoola.github.io/${str}`;
+const url = `https://devayoola.github.io/DevAyoola/${str}`;
 
 const markup = `
 	<style>
@@ -54,7 +54,7 @@ const markup = `
 		}
 	</style>
 	<section class="ref">
-		<button class="dropbtn"><img src="caret-down-fill.svg" /></button>
+		<button class="dropbtn"><img src="../img/caret-down-fill.svg" /></button>
 		<ul class="dropdown-content" id="dropdownContent">
 			<li><a href="${url}">View code</a></li>
 			<li><a href="https://devayoola.github.io/">Home</a></li>
