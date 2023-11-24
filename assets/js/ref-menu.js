@@ -54,7 +54,7 @@ const markup = `
 		}
 	</style>
 	<section class="ref">
-		<button class="dropbtn"><img src="../img/caret-down-fill.svg" /></button>
+		<button class="dropbtn"><img src="../assets/img/caret-down-fill.svg" /></button>
 		<ul class="dropdown-content" id="dropdownContent">
 			<li><a href="${url}">View code</a></li>
 			<li><a href="https://devayoola.github.io/">Home</a></li>
