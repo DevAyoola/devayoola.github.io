@@ -49,7 +49,7 @@ const headerHtml = `
             </div>
             <div class="data">
                 <h4>Sowunmi Ayoola</h4>
-                <p class="text-center">A Frontend Developer and Designer</p>
+                <p class="text-center">A Frontend Developer and A Graphics Designer</p>
             </div>
             <div class="row">
                 <span

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500,600&display=swap");
 
 *,
 *::before,
@@ -76,7 +76,7 @@ a {
 }
 
 .nav-link {
-	font-family: Work Sans;
+	font-family: "Work Sans", sans-serif;
 	font-size: 16px;
 	padding: 10px 3px 10px 3px;
 	margin-right: 15px;
@@ -168,9 +168,11 @@ a {
 	margin: 50px 0 0 0;
 }
 
-.banner {
+.banner,
+.bannerProj,
+.webc {
 	background-image: linear-gradient(to top left, #aaa8ba 0%, #c0ded6 100%);
-	font-family: Work Sans;
+	font-family: "Work Sans", sans-serif;
 }
 
 .headImg Img,
@@ -193,13 +195,14 @@ a {
 	padding: 0 0 45px 0;
 }
 
-.projectCard,
-.projectCard--col {
-	margin: 0 34px 0 0;
+.projects h2 {
+	font-family: "Work Sans", sans-serif;
+	font-weight: 900;
 }
 
-.projectCard--col {
+.projectCard {
 	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+	border: none;
 }
 
 .projectCardImg {
@@ -286,8 +289,7 @@ footer {
 		padding-top: 50px;
 	}
 
-	.projectCard,
-	.projectCard--col {
+	.projectCard {
 		display: block;
 		width: 84%;
 		margin: 0 0 34px 0;
@@ -320,8 +322,7 @@ footer {
 		padding-top: 60px;
 	}
 
-	.projectCard,
-	.projectCard--col {
+	.projectCard {
 		display: block;
 		width: 75%;
 		margin: 0 0 34px 0;
@@ -361,8 +362,7 @@ footer {
 		margin: -65px 0 0 0;
 	}
 
-	.projectCard,
-	.projectCard--col {
+	.projectCard {
 		display: block;
 		width: 75%;
 		margin: 0 0 34px 0;
@@ -410,8 +410,7 @@ footer {
 		padding-bottom: 10px;
 	}
 
-	.projectCard,
-	.projectCard--col {
+	.projectCard {
 		width: 30%;
 		margin: 0 34px 0 0;
 	}
