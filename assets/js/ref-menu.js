@@ -2,7 +2,7 @@ const bodyDoc = document.querySelector("body");
 
 let docTitle = document.title;
 const str = docTitle.toLowerCase().split(" ").join("-");
-const url = `https://devayoola.github.io/DevAyoola/${str}`;
+const url = `https://github.com/DevAyoola/${str}`;
 
 const markup = `
 	<style>
