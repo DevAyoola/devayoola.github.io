@@ -1,0 +1,142 @@
+/* Profile Card */
+
+.profile-card {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	background-color: whitesmoke;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	align-items: center;
+	max-width: 400px;
+	width: 90%;
+	border-radius: 25px;
+	padding: 0 30px 30px 30px;
+	border: 1px solid #ffffff40;
+	z-index: 10;
+}
+
+.close-profile {
+	font-size: 2.5rem;
+	color: #7c7c7c;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+.profile-card .profile-image {
+	position: relative;
+	height: 100px;
+	width: 100px;
+}
+
+.profile-card .profile-image .pic {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.profile-card .data {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.profile-card .data h4 {
+	font-weight: 600;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(5px);
+	z-index: 5;
+}
+
+/* Website Template Card */
+
+/* Project Cards */
+
+.project-card {
+	background-color: white;
+	box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+	border: none;
+	border-radius: 7px;
+	padding: 0 5px 24px 12px;
+	margin-bottom: 21px;
+}
+
+.project-card:hover {
+	box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.3);
+	margin-top: -10px;
+	transition-duration: 0.1s;
+}
+
+.project-card .material-icons:hover {
+	cursor: default;
+}
+
+.project-card h5,
+.project-card a {
+	font-family: "Mulish", sans-serif;
+	font-weight: 600;
+	margin-left: 16px;
+}
+
+/* Lit Cards */
+
+.lit-card {
+	background-color: white;
+	border-radius: 37px;
+	box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+	margin-right: 20px;
+	padding: 7px 28px 17px 28px;
+	width: max-content;
+	cursor: pointer;
+}
+
+.lit-card .material-icons {
+	margin: 0 0 -18px 0;
+}
+
+.lit-card .pyb-text {
+	font-family: "Mulish", sans-serif;
+	font-size: 19px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin: 0 0 0 0;
+}
+
+/* Media Queries */
+/*
+@media screen and (max-width: 576px) {
+	.projectCard {
+		display: block;
+		width: 84%;
+		margin: 0 0 34px 0;
+	}
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+	.project-card {
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.project-card {
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.project-card {
+	}
+}
+*/

@@ -2,7 +2,7 @@
 
 This is a GitHub page site to showcase my projects.
 
-**Languages** - HTML, CSS, JavaScript
+**Languages** - HTML, CSS, JavaScript, Python
 
 **Libraries** - Bootstrap, Google Fonts
 

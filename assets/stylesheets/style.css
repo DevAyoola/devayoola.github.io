@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Ubuntu:wght@300;400;500;600&family=Work+Sans:wght@400;500;600&display=swap");
+@import "cards.css";
 
 *,
 *::before,
@@ -10,11 +11,38 @@ body {
 	overflow-x: hidden !important;
 }
 
+h2 {
+	font-family: "Work Sans", sans-serif;
+	font-weight: 400;
+}
+
 a {
 	text-decoration: none;
 }
 
+.def-col {
+	color: #eeeef5;
+}
+
+.def-bg {
+	background-color: #eeeef5;
+}
+
+.def-font {
+	font-family: "Work Sans", sans-serif;
+}
+
+.def-col-font {
+		color: #eeeef5;
+		font-family: "Work Sans", sans-serif;
+}
+
 /* Material Icons Style */
+
+.material-icons {
+	overflow: hidden;
+}
+
 .mi-24 {
 	font-size: 24px;
 }
@@ -23,43 +51,44 @@ a {
 	font-size: 36px;
 }
 
-.mi-198 {
-	font-size: 182px;
+.mi-50 {
+	font-size: 50px;
 }
 
-.mi-light,
-.iw {
-	color: #eeeef5;
+.mi-178 {
+	font-size: 178px;
 }
 
-.mi-dark {
-	color: #404040;
+.row {
+	display: flex;
+	align-items: center;
 }
 
-.projects,
-.projectsPg,
-.bannerProj,
-.web-components,
-.contact {
+.web-temp,
+.frontend-projects,
+.ui-components,
+.pyb-projects, .fppg-banner {
 	background-color: #eeeef5;
+	padding: 68px 0 10px 0;
 }
 
 /*Navbar Style*/
+
 .navbar {
 	margin: 0 auto;
 	background-color: #3e3e43;
 	box-shadow: 0 0 15px #d1d1d1;
+	z-index: 99;
 }
 
 .nav-link,
 .navbar-brand {
-	border-radius: 5px;
 	color: #eeeef5 !important;
 	cursor: pointer;
 }
 
 .navbar-brand {
-	font-family: Work Sans;
+	font-family: "Work Sans", sans-serif;
 	font-size: 20px;
 	font-weight: 600;
 	margin-left: 8px;
@@ -82,10 +111,47 @@ a {
 	margin-right: 15px;
 }
 
-.nav-link:hover,
-.active {
+.nl .nav-link:hover {
+	border-bottom: solid 2px #eeeef5;
+	padding-bottom: 5px;
+	max-width: 91%;
+}
+
+/* Submenu Style */
+
+.submenu ul {
+	list-style-type: none;
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+.submenu .dropdown-btn {
+	display: flex;
+}
+
+.submenu .dropdown-content {
 	background-color: #eeeef5;
-	color: #37373c !important;
+	display: none;
+	position: absolute;
+	box-shadow: 2px 3px 16px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	padding: 7px 0;
+	z-index: 999;
+}
+
+.submenu .dropdown-content li a {
+	color: #3e3e43;
+	font-family: "Work Sans", sans-serif;
+	font-size: 13px;
+	padding: 8px 12px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.submenu .dropdown-content li a:hover {
+	background-color: #3e3e43;
+	color: #eeeef5;
 }
 
 .face-icon {
@@ -94,162 +160,104 @@ a {
 	background-color: transparent;
 }
 
-/* Profile Card */
-.profile-card {
-	position: fixed;
-	display: flex;
-	flex-direction: column;
-	background-color: whitesmoke;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	align-items: center;
-	max-width: 400px;
-	width: 90%;
-	border-radius: 25px;
-	padding: 0 30px 30px 30px;
-	border: 1px solid #ffffff40;
-	z-index: 10;
-	/*margin-top: 75px;*/
-}
-
-.close-profile {
-	font-size: 2.5rem;
-	color: #7c7c7c;
-	cursor: pointer;
-	border: none;
-	background: none;
-}
-
-.image {
-	position: relative;
-	height: 100px;
-	width: 100px;
-}
-
-.image .profile-pic {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 50%;
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
-}
-
-.data {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 15px;
-}
-
-.data h4 {
-	font-weight: 600;
-}
-
-.row {
-	display: flex;
-	align-items: center;
-}
-
-.overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
-	backdrop-filter: blur(5px);
-	z-index: 5;
-}
-
 /* Banner */
-.banner,
-.bannerProj {
+.banner {
 	margin: 50px 0 0 0;
 }
 
-.banner,
-.bannerProj,
-.webc {
+.banner {
 	background-image: linear-gradient(to top left, #aaa8ba 0%, #c0ded6 100%);
 	font-family: "Work Sans", sans-serif;
 }
 
-.headImg Img,
-.projImg Img {
+.banner-img img {
 	height: auto;
 	width: 100%;
-	max-width: 450px;
 }
 
-/* Banner Header */
-.bannerImg {
-	height: auto;
-	width: 50%;
-	opacity: 15%;
-	margin: 0 auto;
-}
+/* See More Button */
 
-/* Projects Section */
-.projectsPg {
-	padding: 0 0 45px 0;
-}
-
-.projects h2 {
-	font-family: "Work Sans", sans-serif;
-	font-weight: 900;
-}
-
-.projectCard {
-	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-	border: none;
-}
-
-.projectCardImg {
-	width: 80%;
-}
-
-.see-more,
-.get-in-touch {
+.see-more {
 	background-color: #5a5aff;
 	color: #fafafa;
-	border-radius: 35px;
-	font-family: Work Sans;
+	border: solid 2px #5a5aff;
+	border-radius: 25px;
+	font-family: "Mulish", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	padding: 10px 42px;
 }
 
-.see-more:hover,
-.get-in-touch:hover {
-	background-color: #4a4ad2;
-	color: #fafafa;
+.see-more:hover {
+	background-color: transparent;
+	color: #5a5aff;
+	border: solid 2px #5a5aff;
+}
+
+/* Website Template Section */
+
+.web-temp .heading .tag {
+	background-color: #3e3e43;
+	border-radius: 5px;
+	font-size: 13px;
+}
+
+/* Python Basic Projects Section */
+
+.pyb-projects {
+		padding-bottom: 68px;
+}
+
+.pyb-projects .row-main {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.pyb-projects .row-main .lit-card {
+	margin-bottom: 32px;
 }
 
 /* Contact Style */
-.contact {
-	padding: 50px 0;
-}
 
-.whatsApp {
-	padding: 2px;
+.contact h3, .devay h3 {
+	font-weight: 600;
 }
 
 /* Footer */
+
 footer {
 	background-color: #2e2e31;
 	color: #eeeef5;
 }
 
-.def {
-	color: #eeeef5;
-	font-family: Work Sans;
-}
-
-.def a,
-.hov:hover {
-	color: #4c4cff;
+.social-icons i:hover {
+	color: lightgreen;
 }
 
 .hidden {
 	display: none;
+}
+
+/* Frontend Projects Page */
+
+.fppg-banner {
+	padding-top: 87px;
+}
+
+.fppg-banner .row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.fppg-banner .row img {
+	opacity: 0.2;
+}
+
+.fppg-banner .row h3 {
+	margin: -54px 0 0 0;
 }
 
 /* Style - navbarToggler Appearance */
@@ -265,161 +273,118 @@ footer {
 	.nav-link {
 		padding-left: 10px;
 	}
+
+	.banner-img, .banner-txt h1, .banner-txt p {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 977px) {
+	.submenu .dropdown-content {
+		position: absolute;
+	}
+}
+
+@media screen and (max-width: 976px) {
+	.submenu .dropdown-content {
+		position: relative;
+	}
+}
+
+@media screen and (max-width: 751px) {
+	.social-icons .col-md-3 {
+		padding-bottom: 8px;
+	}
 }
 
 /* Mobile Phones */
 @media screen and (max-width: 576px) {
 	.banner {
-		height: 70vh;
+		height: 50vh;
+		padding-top: 16px;
 	}
 
-	.headImg Img {
-		margin-top: 45px;
+	.banner-img {
+		padding: 12px;
 	}
 
-	.headText {
-		margin: 30px 0 0 0;
+	.banner-img img {
+		max-width: 208px;
+		opacity: 0.3;
 	}
 
-	.bannerProj {
-		height: 45vh;
+	.banner-txt h1, .contact h3, .devay h3 {
+		font-size: 20px;
 	}
 
-	.bannerImg {
-		padding-top: 50px;
+	.banner-txt p, .devay p {
+		font-size: 14px;
 	}
 
-	.projectCard {
-		display: block;
-		width: 84%;
-		margin: 0 0 34px 0;
+	.fppg-banner img {
+		width: 400px;
+		height: auto;
 	}
 
-	.whatsApp {
-		width: 80%;
+	.social-icons {
+		margin: -20px 0 0 0;
 	}
 }
 
 /* Tablets */
 @media screen and (min-width: 577px) and (max-width: 767px) {
 	.banner {
-		height: 72vh;
+		height: 62vh;
+		padding-top: 30px;
 	}
 
-	.headImg Img {
-		margin-top: 50px;
+	.banner-img {
+		padding: 19px;
 	}
 
-	.headText {
-		margin: 30px 0 0 0;
+	.banner-img img {
+		max-width: 300px;
 	}
 
-	.bannerProj {
-		height: 45vh;
-	}
-
-	.bannerImg {
-		padding-top: 60px;
-	}
-
-	.projectCard {
-		display: block;
-		width: 75%;
-		margin: 0 0 34px 0;
-	}
-
-	.whatsApp {
-		width: 80%;
+	.fppg-banner img {
+		width: 400px;
+		height: auto;
 	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	.banner {
 		height: 68vh;
+		padding-top: 35px;
 	}
 
-	.headImg Img {
-		margin-top: 50px;
+	.banner-img {
+		padding: 16px;
 	}
 
-	.headText {
-		margin: 30px 0 0 0;
+	.banner-img img {
+		max-width: 380px;
 	}
 
-	.bannerProj {
-		height: 45vh;
-	}
-
-	.bannerImg {
-		padding-top: 60px;
-	}
-
-	.bannerHead {
-		margin: -135px 0 0 0;
-	}
-
-	.bannerText {
-		margin: -65px 0 0 0;
-	}
-
-	.projectCard {
-		display: block;
-		width: 75%;
-		margin: 0 0 34px 0;
-	}
-
-	.whatsApp {
-		width: 40%;
+	.fppg-banner img {
+		width: 400px;
+		height: auto;
 	}
 }
 
 /* Laptops, Desktops */
 @media screen and (min-width: 992px) {
 	.banner {
-		height: 60vh;
+		height: 58vh;
+		padding-top: 72px;
 	}
 
-	.headImg Img {
-		margin: 85px 0 0 10px;
+	.banner-img img {
+		max-width: 450px;
 	}
 
-	.headText {
-		margin: 120px 0 0 0px;
-	}
-
-	.bannerProj {
-		height: 55vh;
-	}
-
-	.bannerImg {
-		padding-top: 40px;
-	}
-
-	.bannerHead {
-		margin: -135px 0 0 0;
-	}
-
-	.bannerText {
-		margin: -65px 0 0 0;
-	}
-
-	.projImg {
-		margin: -70px 0 0 0;
-		overflow: hidden;
-		opacity: 5%;
-		padding-bottom: 10px;
-	}
-
-	.projectCard {
-		width: 30%;
-		margin: 0 34px 0 0;
-	}
-
-	.proj {
-		width: 40%;
-	}
-
-	.whatsApp {
-		width: 35%;
+	.fppg-banner img {
+		max-width: 480px;
+		height: auto;
 	}
 }

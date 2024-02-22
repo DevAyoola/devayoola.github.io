@@ -30,6 +30,11 @@
 			href="./assets/stylesheets/style.css"
 			type="text/css"
 		/>
+		<link
+			rel="stylesheet"
+			href="./assets/stylesheets/tooltip.css"
+			type="text/css"
+		/>
 
 		<!--script
 			defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -38,20 +43,21 @@
 		></script-->
 		<script defer src="./assets/js/header.js"></script>
 		<script defer src="./assets/js/footer.js"></script>
-		<script defer src="./assets/bootstrap-5.2.3/js/bootstrap.min.js"></script>
+		<script defer src="./assets/bootstrap-5.2.3/js/bootstrap.bundle.min.js"></script>
 		<script defer src="./assets/js/script.js"></script>
 	</head>
 	<body>
 		<!-- Header -->
+		<header class="header"></header>
 		<p class="page-title hidden">Home</p>
 
-		<section class="banner pb-4 after-header" id="home">
+		<section class="banner pb-4" id="home">
 			<div class="container">
 				<div class="row m-auto">
-					<div class="col-lg-6 headImg">
+					<div class="col-lg-6 banner-img">
 						<img src="./assets/img/developer.png" />
 					</div>
-					<div class="col-lg-6 headText">
+					<div class="col-lg-6 banner-txt">
 						<h1 class="fw-bolder">DevAyoola</h1>
 						<p>
 							Hello! Am Ayoola. Am a frontend web developer and an aspiring
@@ -64,55 +70,64 @@
 			<br />
 		</section>
 
-		<!--PROJECTS SECTION-->
-		<section id="projects" class="projects pt-5 pb-5">
-			<div class="container overflow-hidden">
-				<div class="row mb-4 text-center">
-					<h2>
-						<b>Latest Projects</b>
+		<!--WEBSITE TEMPLATE SECTION-->
+		<!--
+		<section id="webTemp" class="web-temp">
+			<div class="container">
+				<div class="row mb-4 text-start heading">
+					<h2 class="title">
+						<b>Website Template</b>
+						<span class="badge tag def-col-font">
+	            new
+	          </span>
 					</h2>
 				</div>
-				<div class="row pb-5">
-					<div class="card projectCard mx-auto pt-4">
-						<!-- <img
-							class="rounded-1 mx-3"
-							src="./assets/img/countdown-timer.png"
-						/> -->
-						<span class="material-icons mi-198">code</span>
-						<div class="card-body">
-							<h5 class="card-title pb-3">eCommerce Site</h5>
+				<div class="row gx-5">
+					<div class="web-temp-card">
+						<p>Yeah</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		-->
+
+		<!--FRONTEND PROJECTS SECTION-->
+		<section id="frontendProjects" class="frontend-projects">
+			<div class="container">
+				<div class="row mb-4 text-center">
+					<h2>
+						<b>Frontend Projects</b>
+					</h2>
+				</div>
+				<div class="row gx-5">
+					<div class="col-lg-4">
+						<div class="project-card">
+							<span class="material-icons mi-178">code</span>
+							<h5 class="pb-2">eCommerce Site</h5>
 							<a href="./ecommerce-site" class="btn btn-primary">View</a>
 						</div>
 					</div>
-					<div class="card projectCard mx-auto pt-4">
-						<!-- <img
-							class="rounded-1 mx-3"
-							src="./assets/img/countdown-timer.png"
-						/> -->
-						<span class="material-icons mi-198">code</span>
-						<div class="card-body">
-							<h5 class="card-title pb-3">Weather App</h5>
+					<div class="col-lg-4">
+						<div class="project-card">
+							<span class="material-icons mi-178">code</span>
+							<h5 class="pb-2">Weather App</h5>
 							<a href="./weather-app" class="btn btn-primary">View</a>
 						</div>
 					</div>
-					<div class="card projectCard mx-auto pt-4">
-						<!--img
-							class="rounded-1 mx-3"
-							src="./assets/img/countdown-timer.png"
-						/-->
-						<span class="material-icons mi-198">code</span>
-						<div class="card-body">
-							<h5 class="card-title pb-3">Countdown Timer</h5>
+					<div class="col-lg-4">
+						<div class="project-card">
+							<span class="material-icons mi-178">code</span>
+							<h5 class="pb-2">Countdown Timer</h5>
 							<a href="./countdown-timer " class="btn btn-primary">View</a>
 						</div>
 					</div>
 				</div>
-				<div class="row mt-2">
+				<div class="row mt-5">
 					<div class="d-flex justify-content-center">
 						<a
 							role="button"
-							href="https://devayoola.github.io/projects.html"
-							class="btn fs-5 fw-semibold py-2 px-5 see-more"
+							href="https://devayoola.github.io/frontend-projects.html"
+							class="btn see-more"
 							>See More</a
 						>
 					</div>
@@ -120,46 +135,97 @@
 			</div>
 		</section>
 
-		<!--WEB COMPONENTS SECTION-->
-		<section
-			id="projects"
-			class="projects web-components pt-5 pb-5 before-footer"
-		>
-			<div class="container overflow-hidden">
+		<!--UI COMPONENTS SECTION-->
+		<section id="uiComponents" class="ui-components">
+			<div class="container">
 				<div class="row mb-4 text-center">
 					<h2>
-						<b>Web Components</b>
+						<b>UI Components</b>
 					</h2>
 				</div>
-				<div class="row pb-5">
-					<div class="card projectCard mx-auto">
-						<span class="material-icons mi-198">code</span>
-						<div class="card-body">
-							<h5 class="card-title">Simple Login Form</h5>
-							<br />
-							<a
-								href="https://devayoola.github.io/simple-login-form"
-								class="btn btn-primary"
+				<div class="row gx-5">
+					<div class="col-lg-2"></div>
+					<div class="col-lg-4">
+						<div class="project-card">
+							<span class="material-icons mi-178">code</span>
+							<h5 class="pb-2">Simple Login Form</h5>
+							<a href="./simple-login-form" class="btn btn-primary">View</a>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="project-card">
+							<span class="material-icons mi-178">code</span>
+							<h5 class="pb-2">Registration Form</h5>
+							<a href="./simple-registration-form" class="btn btn-primary"
 								>View</a
 							>
 						</div>
 					</div>
-					<div class="card projectCard mx-auto">
-						<span class="material-icons mi-198">code</span>
-						<div class="card-body">
-							<h5 class="card-title">Registration Form</h5>
-							<br />
-							<a
-								href="https://devayoola.github.io/simple-registration-form"
-								class="btn btn-primary"
-								>View</a
-							>
-						</div>
+					<div class="col-lg-2"></div>
+				</div>
+			</div>
+		</section>
+
+		<!--PYTHON BASIC PROJECTS SECTION-->
+		<section id="pybProjects" class="pyb-projects">
+			<div class="container">
+				<div class="row mb-4 text-center">
+					<h2>
+						<b>Python Basic Projects</b>
+					</h2>
+				</div>
+				<div class="row row-main">
+					<div
+						class="lit-card"
+						link="https://github.com/DevAyoola/python-basic-projects/tree/main/Number Guessing"
+					>
+						<span class="material-icons mi-50 fw-semibold">code</span>
+						<span class="pyb-text">Number Guessing</span>
+					</div>
+					<div
+						class="lit-card"
+						link="https://github.com/DevAyoola/python-basic-projects"
+					>
+						<span class="material-icons mi-50 fw-semibold">code</span>
+						<span class="pyb-text">Email Slicer</span>
+					</div>
+					<div
+						class="lit-card"
+						link="https://github.com/DevAyoola/python-basic-projects"
+					>
+						<span class="material-icons mi-50 fw-semibold">code</span>
+						<span class="pyb-text">Countdown Timer</span>
+					</div>
+					<div
+						class="lit-card"
+						link="https://github.com/DevAyoola/python-basic-projects"
+					>
+						<span class="material-icons mi-50 fw-semibold">code</span>
+						<span class="pyb-text">Tic Tae Toe</span>
+					</div>
+					<div
+						class="lit-card"
+						link="https://github.com/DevAyoola/python-basic-projects"
+					>
+						<span class="material-icons mi-50 fw-semibold">code</span>
+						<span class="pyb-text">Rock Paper Scissors</span>
+					</div>
+				</div>
+				<div class="row pt-2">
+					<div class="d-flex justify-content-center">
+						<a
+							role="button"
+							href="https://devayoola.github.io/python.html"
+							class="btn see-more"
+							>See More</a
+						>
 					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Footer -->
+		<footer class="footer pt-4"></footer>
+
 	</body>
 </html>
