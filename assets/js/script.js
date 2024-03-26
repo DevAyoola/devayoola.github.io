@@ -5,7 +5,6 @@ const navbarCollapse = document.querySelector(".navbar-collapse");
 const profileCard = document.querySelector(".profile-card");
 const overlay = document.querySelector(".overlay");
 const btnCloseProfile = document.querySelector(".close-profile");
-const pageTitle = document.querySelector(".page-title");
 
 // Responsive Face Icon
 

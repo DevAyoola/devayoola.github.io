@@ -21,7 +21,7 @@ footer.innerHTML = `
 
                 <!-- Grid column -->
                 <div class="col-md-3">
-                    <a href="https://github.com/devayoola">
+                    <a href="https://github.com/aydavid-thetechguy.github.io">
                         <i class="bi bi-github fs-3 def-col"></i>
                     </a>
                 </div>
@@ -42,12 +42,10 @@ footer.innerHTML = `
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8 devay">
                     <h3 class="def-col-font">
-                        DevAyoola
+                        AyDavid
                     </h3>
                     <p class="def-col-font">
-                        Hello! Am Ayoola. Am a frontend web developer and an aspiring
-                        software engineer passionate about designing and developing to
-                        make the world a better place.
+                        Hello! By name, am Ayoola David Sowunmi. Am a God-passionate person, a web developer, a graphics designer and an aspiring software engineer passionate about designing and developing to make the world a better place.
                     </p>
                 </div>
                 <div class="col-lg-2"></div>
@@ -57,7 +55,7 @@ footer.innerHTML = `
 
     <!-- Copyright -->
     <div class="text-center def-font p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        <span class="def-col">© 2023 Copyright,</span>
-        <a href="https://devayoola.github.io/">DevAyoola</a>
+        <span class="def-col">© 2024 Copyright,</span>
+        <a href="https://aydavid-thetechguy.github.io/">AyDavid</a>
     </div>
     `;

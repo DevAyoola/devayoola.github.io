@@ -4,9 +4,9 @@ header.innerHTML = `
     <!--NAVIGATION BAR-->
     <nav class="navbar navbar-expand-lg fixed-top pt-2 pb-2">
         <div class="container-fluid pt-2 pb-2">
-            <a class="navbar-brand" href="https://devayoola.github.io">
+            <a class="navbar-brand" href="https://aydavid-thetechguy.github.io">
                 <span class="material-icons mi-36">code</span>
-                <span class="brand-name">DevAyoola</span>
+                <span class="brand-name">AyDavid</span>
             </a>
             <button
                 class="navbar-toggler"
@@ -33,14 +33,24 @@ header.innerHTML = `
                             <li>
                                 <a class="submenu-item" href="./frontend-projects.html">Frontend Projects</a>
                             </li>
-                            <li><a class="submenu-item" href="./ui-components.html">UI Components</a></li>
+                            <!--li><a class="submenu-item" href="./website-templates.html">Website Templates</a></li-->
+                        </ul>
+                    </li>
+                    <li class="nav-item submenu">
+                        <span class="nav-link dropdown-btn">
+                            <span class="txt">More</span>
+                            <span class="material-icons mi-24 drop-icon">expand_more</span>
+                        </span>
+                        <ul class="dropdown-content m-auto">
+                            <li>
+                                <a class="submenu-item" href="./visuals.html">Visuals</a>
+                            </li>
+                            <li><a class="submenu-item" href="./python.html">Python Basic Projects</a></li>
+							<li><a class="submenu-item" href="./index.html#contact">Contact Me</a></li>
                         </ul>
                     </li>
                     <li class="nav-item nl">
-                        <a class="nav-link" href="./python.html">Python</a>
-                    </li>
-                    <li class="nav-item nl">
-                        <a class="nav-link" href="./index.html#contact">Contact</a>
+                        <a class="nav-link" href="./about-me.html">About Me</a>
                     </li>
                 </ul>
             </div>
@@ -59,7 +69,7 @@ header.innerHTML = `
         </div>
         <div class="row">
             <span
-                ><a href="https://github.com/devayoola">
+                ><a href="https://github.com/aydavid-thetechguy">
                     <i class="bi bi-github fs-3 text-dark"></i> </a
                 >&nbsp;
                 <a href="https://wa.me/2348084634310">

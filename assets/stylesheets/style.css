@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Ubuntu:wght@300;400;500;600&family=Work+Sans:wght@400;500;600&display=swap");
+/*@import "style-responsive.css";*/
 @import "cards.css";
 
 *,
@@ -13,7 +14,7 @@ body {
 
 h2 {
 	font-family: "Work Sans", sans-serif;
-	font-weight: 400;
+	font-weight: 500;
 }
 
 a {
@@ -65,11 +66,14 @@ a {
 }
 
 .web-temp,
+.services,
 .frontend-projects,
+.visual-works,
 .ui-components,
-.pyb-projects, .fppg-banner {
+.pyb-projects, 
+.fppg-banner {
 	background-color: #eeeef5;
-	padding: 68px 0 10px 0;
+	padding: 70px 0 10px 0;
 }
 
 /*Navbar Style*/
@@ -161,11 +165,12 @@ a {
 }
 
 /* Banner */
-.banner {
+
+.banner, .banner-ot {
 	margin: 50px 0 0 0;
 }
 
-.banner {
+.banner, .banner-ot {
 	background-image: linear-gradient(to top left, #aaa8ba 0%, #c0ded6 100%);
 	font-family: "Work Sans", sans-serif;
 }
@@ -175,48 +180,113 @@ a {
 	width: 100%;
 }
 
-/* See More Button */
+.banner-txt h1, .banner-txt p {
+	font-weight: 500;
+}
 
-.see-more {
+.banner-txt .one {
+	font-size: 16px;
+	margin-top: -5px;
+}
+
+.banner-txt .two {
+	font-size: 17px;
+	margin-top: -3px;
+}
+
+.banner-txt h5 {
+	font-weight: 500;
+}
+
+.banner-txt hr {
+	border: solid 1px #5a5aff;
+	border-radius: 2px;
+	color:  #5a5aff;
+	width: 20%;
+	opacity: 80;
+}
+
+/* Buttons Style */
+
+.banner-btn, .see-more, .web-temp-btn, .pj-btn {
+	border-radius: 25px;
+	font-family: "Mulish", sans-serif;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+.banner-btn, .see-more, .web-temp-btn {
 	background-color: #5a5aff;
 	color: #fafafa;
 	border: solid 2px #5a5aff;
-	border-radius: 25px;
-	font-family: "Mulish", sans-serif;
 	font-size: 16px;
-	font-weight: 500;
-	letter-spacing: 1px;
-	padding: 10px 42px;
 }
 
-.see-more:hover {
+.banner-btn:hover, .see-more:hover, .web-temp-btn:hover {
 	background-color: transparent;
 	color: #5a5aff;
 	border: solid 2px #5a5aff;
 }
 
+/* Banner Buttons */
+
+.banner-btn {
+	padding: 10px 28px;
+}
+
+/* See More Buttons, webTemp View Button */
+
+.see-more, .web-temp-btn {
+	padding: 10px 42px;
+}
+
+/* Projects Nav Buttons */
+
+.pj-btn {
+	background-color: #eeeef5;
+	color: #3e3e43;
+	border: solid 2px #eeeef5;
+	font-size: 15px;
+	padding: 7px 24px;
+}
+
+.pj-btn:hover {
+	background-color: #3e3e43;
+	color: #eeeef5;
+	border: solid 2px #3e3e43;
+}
+
 /* Website Template Section */
 
-.web-temp .heading .tag {
+.web-temp .top .tag {
 	background-color: #3e3e43;
 	border-radius: 5px;
 	font-size: 13px;
 }
 
-/* Python Basic Projects Section */
-
-.pyb-projects {
-		padding-bottom: 68px;
-}
-
-.pyb-projects .row-main {
-	display: flex;
-	flex-flow: row wrap;
+.web-temp .row-main {
+	align-items: center;
 	justify-content: center;
 }
 
-.pyb-projects .row-main .lit-card {
-	margin-bottom: 32px;
+/* Row Tops */
+
+.frontend-projects .top p, .visual-works .top p {
+	font-family: "Mulish", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+/* Row Mains */
+
+.visual-works .row-main, 
+.pyb-projects .row-main, 
+.flyers .row-main, 
+.posters .row-main {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
 }
 
 /* Contact Style */
@@ -240,6 +310,25 @@ footer {
 	display: none;
 }
 
+/* Python Basic Projects Pg */
+
+.pyb-projects {
+	padding-bottom: 68px;
+}
+
+.pyb-projects .row-main .lit-card, 
+.flyers .row-main .visual-card, 
+.posters .row-main .visual-card {
+	margin-bottom: 32px;
+}
+
+.visual-works .row-main img,
+.flyers .row-main img, 
+.posters .row-main img {
+	width: 300px;
+	height: auto;
+}
+
 /* Frontend Projects Page */
 
 .fppg-banner {
@@ -260,7 +349,28 @@ footer {
 	margin: -54px 0 0 0;
 }
 
+/* About Me Page */
+
+.about .lhs img {
+	max-height: 370px;
+	width: auto;
+}
+
+.about h4 {
+	font-family: "Work Sans", sans-serif;
+	font-weight: 500;
+}
+
+.about h5 {
+	color: #606576;
+}
+
+.about p {
+	font-family: "Mulish", sans-serif;
+}
+
 /* Style - navbarToggler Appearance */
+
 @media screen and (max-width: 991px) {
 	.navbar-nav {
 		margin-top: 10px;
@@ -274,7 +384,7 @@ footer {
 		padding-left: 10px;
 	}
 
-	.banner-img, .banner-txt h1, .banner-txt p {
+	.banner-img, .banner-txt h1, .banner-txt h2 {
 		text-align: center;
 	}
 }
@@ -375,7 +485,7 @@ footer {
 /* Laptops, Desktops */
 @media screen and (min-width: 992px) {
 	.banner {
-		height: 58vh;
+		height: 60vh;
 		padding-top: 72px;
 	}
 
